@@ -43,7 +43,7 @@ class App:
         month = int(input("Month: "))
         day = int(input("Day: "))
         birthdate = datetime.date(year, month, day)
-        gender = input("Gender: ")
+        gender = input("Gender(M/F): ")
         student = Student(None, number, name, surname, gender, birthdate, classid)
         self.db.addStudent(student)
 
@@ -53,7 +53,7 @@ class App:
         student = self.db.getStudentById(studentid)
         student[0].name = input("Name: ") or student[0].name
         student[0].surname = input("Surname: ") or student[0].surname
-        student[0].gender = input("Gender(E/K): ") or student[0].gender
+        student[0].gender =input("Gender(M/F): ") or student[0].gender
         student[0].classid = input("Class:") or student[0].classid
         year = input("Year: ") or student[0].birthdate.year
         month = input("Month: ") or student[0].birthdate.month
@@ -97,7 +97,7 @@ class App:
         month = int(input("Month: "))
         day = int(input("Day: "))
         birthdate = datetime.date(year, month, day)
-        gender = input("Gender: ")
+        gender = input("Gender(M/F): ")
         teacher = Teacher(None, name, surname,birthdate,gender, branchid)
         self.db.addTeacher(teacher)
 
