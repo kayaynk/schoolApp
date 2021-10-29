@@ -125,21 +125,3 @@ class DbManager:
     #     self.connection.close()
     #     print("Database is closed")
 
-# # db=DbManager()
-# # student = db.getStudentById(7)
-# # student[0].name="Hasan Kaya"
-# # student[0].surname="Yanıkomeroglu"
-# # student[0].studentNumber="8240"
-# # student[0].gender="E"
-# # db.editStudent(student[0])
-# # student = db.getStudentsByClassId(1)
-# # print(student[4].name)
-# # # print(student[0].surname)
-# # # print(student[0].studentNumber)
-# db = DbManager()
-# teacher = db.getTeacherByBranchId(4)
-# # teacher[0].name="Hasan Kaya"
-# # teacher[0].surname="Yanıkomeroglu"
-# # teacher[0].
-# # teacher[0].gender="E"
-# print(teacher[0].name)
